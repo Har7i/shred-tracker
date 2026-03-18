@@ -1,0 +1,47 @@
+# 后端
+# Python 缓存
+shred-tracker-backend/__pycache__/
+shred-tracker-backend/*.pyc
+shred-tracker-backend/.pytest_cache/
+
+# 数据库文件 (不要把你的健身数据传到网上)
+shred-tracker-backend/*.db
+shred-tracker-backend/*.sqlite3
+shred-tracker-backend/data/*.db
+
+# 环境与配置
+shred-tracker-backend/.env
+shred-tracker-backend/venv/
+shred-tracker-backend/.venv/
+shred-tracker-backend/.vscode/
+shred-tracker-backend/.idea/
+
+# 操作系统文件
+shred-tracker-backend/.DS_Store
+
+# 前端
+# Logs
+shred-tracker-frontend/logs
+shred-tracker-frontend/*.log
+shred-tracker-frontend/npm-debug.log*
+shred-tracker-frontend/yarn-debug.log*
+shred-tracker-frontend/pnpm-debug.log*
+shred-tracker-frontend/lerna-debug.log*
+
+shred-tracker-frontend/node_modules
+shred-tracker-frontend/dist
+shred-tracker-frontend/dist-ssr
+shred-tracker-frontend/*.local
+
+# Editor directories and files
+shred-tracker-frontend/.vscode/*
+shred-tracker-frontend/!.vscode/extensions.json
+shred-tracker-frontend/.idea
+shred-tracker-frontend/*.suo
+shred-tracker-frontend/*.ntvs*
+shred-tracker-frontend/*.njsproj
+shred-tracker-frontend/*.sln
+shred-tracker-frontend/*.sw?
+
+# 系统
+.DS_Store

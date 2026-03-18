@@ -1,0 +1,18 @@
+# Web Framework & Sever
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Database & ORM
+sqlalchemy[asyncio]==2.0.25
+aiosqlite==0.19.0
+
+# Data Validation & Settings
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+passlib[bcrypt]
+bcrypt==4.0.1
+python-jose[cryptography]
+python-multipart
+
+# Future AI Extension Placeholder 
