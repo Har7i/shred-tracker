@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # 后端服务
+  backend:
+    build: ./shred-tracker-backend
+    container_name: shred_tracker_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./shred-tracker-backend:/app
+      - ./shred-tracker-backend/data:/app/data
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./data/shred.db
+    restart: always
+
+  # 前端服务
+  frontend:
+    build: ./shred-tracker-frontend
+    container_name: shred_tracker_web
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./shred-tracker-frontend:/app
+      - /app/node_modules # 避免本地 node_modules 覆盖容器内的
+    restart: always
