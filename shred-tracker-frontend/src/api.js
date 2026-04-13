@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // 1. 创建实例
 const api = axios.create({
-  baseURL: '/api', // 对应 vite.config.js 里的代理路径
+  baseURL: 'http://3.26.130.155:8000', // 对应 vite.config.js 里的代理路径
 });
 
 // 2. 请求拦截器：在请求发出去之前，自动塞入 Token
